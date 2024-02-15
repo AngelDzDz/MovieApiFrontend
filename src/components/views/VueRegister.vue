@@ -53,11 +53,11 @@ export default {
         const successMessage = ref('');
 
         const errorClass = computed(() => {
-                return errorMessage.value ? 'alert alert-danger' : 'd-none';
+                return errorMessage.value ? 'alert alert-danger text-center' : 'd-none';
         });
 
         const successClass = computed(() => {
-            return successMessage.value ? 'alert alert-success' : 'd-none';
+            return successMessage.value ? 'alert alert-success text-center' : 'd-none';
         });
 
         const goToLogin = () => {

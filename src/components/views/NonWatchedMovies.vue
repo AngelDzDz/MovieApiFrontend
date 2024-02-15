@@ -6,7 +6,14 @@
         <div class="mb-3">
             <AddNonWatchedMovie/>
         </div>
-        <p v-if="nonWatchedMovies.length === 0">No hay películas</p> 
+       <div class="my-5 text-center" v-if="nonWatchedMovies.length === 0">
+            <div class="d-flex justify-content-center">
+                <img :src="require('/public/images/claqueta.png')" alt="Movie App">
+            </div>
+           <div class="d-flex justify-content-center">
+            <p class=" my-3 text-secondary">No hay películas disponibles.</p>
+           </div>
+        </div>
 
         <div v-else class="table-responsive">
             <table class="table table-bordered">

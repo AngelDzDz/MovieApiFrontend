@@ -45,7 +45,7 @@
             const errorMessage = ref('');
 
             const pClass = computed(() => {
-                return errorMessage.value ? 'alert alert-danger' : 'd-none';
+                return errorMessage.value ? 'alert alert-danger text-center' : 'd-none';
             });
 
             const login = async () => {
